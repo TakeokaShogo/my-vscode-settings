@@ -1,10 +1,20 @@
 {
   "tabnine.experimentalAutoImports": true,
-  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.colorTheme": "Batman",
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "j"],
       "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["u"],
+      "commands": ["undo"]
+    },
+    {
+      "before": ["<C-r>"],
+      "commands": ["redo"]
     }
   ],
   // formatter
@@ -16,5 +26,20 @@
     "source.addMissingImports": true,
     "source.organizeImports": true, //未使用のインポート削除
     "source.fixAll.eslint": true // ファイル保存時に ESLint でフォーマット
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "redhat.telemetry.enabled": true,
+  //jest extension
+  "jest.autoRun": "off",
+  //eslint : このシステムではスクリプトの実行が無効になっているため~ の対策
+  "terminal.integrated.env.windows": {
+    "PSExecutionPolicyPreference": "RemoteSigned"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "files.exclude": {
+    "**/.git": false
   }
 }
+
